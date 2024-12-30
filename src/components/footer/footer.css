@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mr+De+Haviland&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer{
+    background: var(--color-bark-bg);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    padding: 5rem 0;
+    gap: 2rem;
+    text-align: center; 
+    background-image: url(../../assets/bg-texture.png);
+}
+.footer h1{
+    transition-property: opacity, transform;
+    font-family: "Mr_De_Haviland variant0", Tofu;
+  font-weight: 500;
+  font-style:italic;
+}
+.footer-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    color: white !important;
+}
+.footer-link a{
+    color: white;
+    transition: var(--transition);
+}
+.footer_socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.footer-icon{
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top:active {
+    transform: scale(0.95);
+}
+
+.back-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

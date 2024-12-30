@@ -1,0 +1,36 @@
+.skill {
+    background: var(--color-bark-bg);
+    background-image: url(../../assets/bg-texture.png);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    padding: 5rem;
+    gap: 2rem;
+    text-align: center; 
+}
+
+.skill-boxs {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; 
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.skill-box {
+    background: var(--color-bg);
+    padding: 1rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.skill-box:hover {
+    transform: translateY(-3px); /* Lift the div upward */
+}
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
